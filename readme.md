@@ -27,12 +27,16 @@ The procedure used to train the DQN-agent is outlined below:
 5) The action corresponding to the maximum q-value is taken by the agent, the latent user vector s_t is recomputed with the chosen action
 6) The process repeats from step 4. until the specified number of training iterations is reached
 
-## Environment
+### Environment
 
 The environment for each user consists of the items that the user has interacted with and rated in the past. 
 Items without ratings are (currently) not included in the potential items to recommend for a user. 
 The interaction sequence (s_t) contains the required information for the markov property, as it is a condensation of 
 the items interacted with in a session.
+
+### Data
+
+Automatic parsing is currently supported for the MovieLens1m dataset [(available here)](https://grouplens.org/datasets/movielens/1m/).
 
 ## Example Runs
 
